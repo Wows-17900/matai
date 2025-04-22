@@ -1,0 +1,151 @@
+.oracle-page {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px 0 40px;
+  min-height: calc(100vh - 80px); 
+}
+
+.oracle-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.oracle-header h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.oracle-header p {
+  color: #666;
+  font-size: 18px;
+}
+
+.oracle-controls {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  margin-top: 30px;  
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #444;
+  text-align: left;
+}
+
+.input-group textarea, 
+.input-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background-color: #f9f9f9;
+  box-sizing: border-box; 
+}
+
+.input-group select {
+  min-width: 100%; 
+  max-width: 100%;
+}
+
+.input-group textarea:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: #333;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+}
+
+.generate-button {
+  padding: 12px 25px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.generate-button:hover:not(:disabled) {
+  background-color: #111;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.generate-button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.oracle-result {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.oracle-result h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.oracle-result h2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #333;
+}
+
+.result-content {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: #333;
+  animation: blink 1s infinite;
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+  .oracle-controls, .oracle-result {
+    padding: 20px;
+  }
+  
+  .oracle-header h1 {
+    font-size: 28px;
+  }
+}

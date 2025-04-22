@@ -1,0 +1,36 @@
+.chatbot-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 80px - 60px); 
+}
+
+.chatbot-page-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.chatbot-page-header h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.chatbot-page-header p {
+  font-size: 18px;
+  color: #666;
+}
+
+.chatbot-wrapper {
+  margin: 20px 0;
+  height: auto; 
+}
+
+.chatbot-page-footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  color: #777;
+  font-size: 14px;
+}
